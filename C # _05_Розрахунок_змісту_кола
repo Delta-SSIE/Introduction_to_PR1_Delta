@@ -1,0 +1,25 @@
+namespace Розрахунок_змісту_кола
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double pi = Math.PI;
+            Console.WriteLine($"π is {pi} .");
+
+            double rounded = Math.Round(pi, 3); //округлено до трьох місць
+            Console.WriteLine($"It is rounded {rounded} .");
+
+            //відформатована заява
+            Console.WriteLine($"Can be displayed with formatting as {pi:0.00000}");
+
+            Console.WriteLine("Enter the radius of the circle");
+            double radius = double.Parse(Console.ReadLine());
+            double content = radius * pi;
+            Console.WriteLine($"The content of a circle with radius {radius} is {content:0.00}");
+            Console.ReadKey();
+
+            //Доповніть програму обчисленням довжини кола
+        }
+    }
+}
