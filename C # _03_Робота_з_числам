@@ -1,0 +1,40 @@
+namespace Робота_з_числам
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            {
+            // oціле число = integer (anglicky)
+            int numberA = 15;
+            Console.Write("A number has been entered: ");
+            Console.WriteLine( numberA); //друкується як рядок
+
+
+
+                // отримати номер від користувача
+                Console.WriteLine("Enter an integer:");
+            string read_number = Console.ReadLine();
+
+            //Я перетворюю рядок у ціле число
+            int number = int.Parse(read_number);
+
+            //перетворити на десяткове число
+            double decNumber = double.Parse(read_number);
+
+            // increase it by 1
+            // read_number = read_number + 1; This is not the way it is - it connects strings
+            //number = number + 1; or number++
+            number++;
+            decNumber = decNumber + 1;
+
+            // напиши йому це назад
+
+            Console.WriteLine("After magnification by 1, the whole integer number is output " + number);
+            Console.WriteLine("After magnification by 1, a decimal number is output " + decNumber);
+                Console.ReadKey();
+        }
+        }
+    }
+}
