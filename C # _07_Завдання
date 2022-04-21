@@ -1,0 +1,29 @@
+//Напишіть програму, яка зчитує ім’я та рік народження користувача та визначає, скільки йому років.
+/*
+solution
+namespace _C # _07_Завдання
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.Write("Enter a username: ");
+            string name = Console.ReadLine();
+
+
+            Console.Write("Enter the year of birth: ");
+            string input_date = Console.ReadLine();
+
+     
+            int yearB = int.Parse(input_date);
+
+
+            int yearNow = 2022;
+            int age = yearNow - yearB;
+
+            //vypsat odpověď
+            Console.WriteLine($"{name} is {age} yaer old.");
+        }
+    }
+}
