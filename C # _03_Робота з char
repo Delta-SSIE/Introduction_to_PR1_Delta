@@ -1,0 +1,21 @@
+namespace Робота_з_char
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 1 характер = character
+            char letter = ':';
+            Console.WriteLine(letter);
+            Console.WriteLine("Press any key: ");
+            char read_letter = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+
+            Console.WriteLine("You squeezed " + read_letter);
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+
+        }
+    }
+}
