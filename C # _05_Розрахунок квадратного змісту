@@ -1,0 +1,21 @@
+namespace Розрахунок_квадратного_змісту
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the length of the side of the square: ");
+
+            string entered = Console.ReadLine();
+            double side = double.Parse(entered);
+
+            double content = side * side;
+
+            //Console.WriteLine("The content of the square about the side  " + side + " is " + content + ".");
+            Console.WriteLine($"The content of the square about the side {side} is {content}.");
+            Console.ReadKey();
+
+            //Змініть програму для обчислення вмісту прямокутника !!!
+        }
+    }
+}
