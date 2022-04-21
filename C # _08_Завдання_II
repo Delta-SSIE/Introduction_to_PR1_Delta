@@ -1,0 +1,33 @@
+/*
+Напишіть програму, яка розраховує, скільки людей перевозить ліфт із заданою вантажопідйомністю
+Create a program that calculates how many people will drive an elevator with a given load capacit
+
+solution
+
+namespace _08_Elevator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input;
+
+            
+            Console.WriteLine("How much is the capacity of the elevator? ");
+            input = Console.ReadLine();
+            int loadCapacity = int.Parse(input);
+
+            //Я запитую вагу людини і зберігаю як число
+            Console.WriteLine("How much a person weighs? ");
+            input = Console.ReadLine();
+            int weighPerson = int.Parse(input);
+
+            //Я підрахую, скільки людей
+            int nuberPerson = loadCapacity / weighPerson;
+            
+            //я буду писати
+            Console.WriteLine($"Elevator with load capacity {loadCapacity} will carry {numberPersons} people with weight {weightPersons}.");
+        }
+    }
+}
+*/
