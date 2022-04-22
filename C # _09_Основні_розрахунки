@@ -1,0 +1,32 @@
+/*
+ *Напишіть програму, яка зчитує у користувача два типи транспортних засобів і відстань маршруту, 
+ *який ви хочете пройти з ними. Програма обчислює загальну довжину маршруту, який вона перераховує.
+ */
+namespace Основні_розрахунки
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+           Console.WriteLine("Enter the first means of transport you want to travel (eg. bike, car, motorbike, scooter, bus, etc.):");
+            string dp1 = Console.ReadLine();
+
+            Console.WriteLine("Enter the second means of transport you want to travel (eg. bike, car, motorbike, scooter, bus, etc.):");
+            string dp2 = Console.ReadLine();
+
+            Console.WriteLine($"Write how far (km) you want to travel by vehicle {dp1}:");
+            string input1 = Console.ReadLine();
+            double distance1 = double.Parse(input1);
+
+            Console.WriteLine($"Write how far (km) you want to travel by vehicle {dp2}:");
+            string input2 = Console.ReadLine();
+            double distance2 = double.Parse(input2);
+
+            double total = distance1 + distance2;
+
+            Console.WriteLine($"Total journey by means of transport {dp1} and {dp2} is long {total} km.");
+            Console.ReadKey();
+        }
+    }
+}
