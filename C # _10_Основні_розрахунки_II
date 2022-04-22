@@ -1,0 +1,39 @@
+/*Програма зчитує два значення від користувача. Він перетворює їх, зазначені у вигляді рядка, у тип даних подвійного, а потім перетворює їх у ціле число.
+ * Перелічує обидва вказані значення як у подвійних, так і в цілочисельних типах даних. 
+ * Програма реалізує основні математичні операції (сума, різниця, добуток, коефіцієнт, цілочисельне ділення div і залишок після цілого поділу mod).
+ */
+namespace Основні_розрахунки_II
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+           Console.WriteLine("Enter the first number:");
+            double number1Double = double.Parse(Console.ReadLine());
+            int number1Int = Convert.ToInt32(number1Double);
+
+            Console.WriteLine("Enter the second number:");
+            double number2Double = double.Parse(Console.ReadLine());
+            int number2Int = Convert.ToInt32(number2Double);
+           
+            Console.WriteLine($"Number1 data typ double {number1Double:0.00}, Number1 data typ integer {number1Int}, Number2 data typ double {number2Double:0.00}, Number2 data typ integer {number2Int}");
+
+            double sum = number1Double + number2Double;
+            double difference = number1Double - number2Double;
+            double product = number1Double * number2Double;
+            double ratio = number1Double / number2Double;
+            int divResult = number1Int / number2Int;
+            int modResult = number1Int % number2Int;
+
+            Console.WriteLine($"Result Number1Doudle + Number2Double is {sum:0.00}");
+            Console.WriteLine($"Result Number1Doudle - Number2Double is {difference:0.00}");
+            Console.WriteLine($"Result Number1Doudle * Number2Double is {product:0.00}");
+            Console.WriteLine($"Result Number1Doudle / Number2Double is {ratio:0.00}");
+            Console.WriteLine($"Result Number1Int div Number2int is {divResult}");
+            Console.WriteLine($"Result Number1Int mod Number2int is {modResult}");
+
+            Console.ReadKey();
+        }
+    }
+}
