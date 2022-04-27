@@ -1,0 +1,25 @@
+namespace ConsoleApp74_IF
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //načtu číslo
+            Console.Write("Enter number:");
+            string input = Console.ReadLine();
+            double number = double.Parse(input);
+
+            //// when the number is greater than 10
+            if (number > 10) //round brackets required
+            {
+                Console.WriteLine("The number is greater than 10");
+            }
+           else //v opačném případě
+           {
+               Console.WriteLine("The number is less than or equal to 10.");
+           }
+
+            Console.ReadKey();
+        }
+    }
+}
