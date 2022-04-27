@@ -1,0 +1,30 @@
+namespace ConsoleApp74_IF
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // load the day of the week
+            Console.WriteLine("Enter the day of the week");
+            int n = int.Parse(Console.ReadLine());
+
+            //if (n == 6)
+            //{
+            //    Console.WriteLine("Je víkend");
+            //}
+            //else if (n == 7)
+            //{
+            //    Console.WriteLine("Je víkend");
+            //}
+            //else
+            //    Console.WriteLine("Není víkend");
+
+            if (n == 6 || n == 7)
+               Console.WriteLine("It is weekend");            
+            else
+                Console.WriteLine("It's not a weekend");
+
+            Console.ReadKey();
+        }
+    }
+}
