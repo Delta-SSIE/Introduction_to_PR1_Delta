@@ -1,0 +1,60 @@
+namespace ConsoleApp74
+{
+    class Program
+    {
+        /*Програма завантажує% і визначає класифікацію учня
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What percentage did the student get?");
+            string vstup = Console.ReadLine();
+            double percent = double.Parse(vstup);
+
+            // SCORE degree
+            // <100% -83%> 1 (excellent)
+            // (83% -67%> 2 (commendable)
+            // (67% -50%> 3 (good)
+            // (50% -33%> 4 (sufficient)
+            // (33% -0%> 5 (insufficient)
+
+            if (percent > 100 || percent < 0)
+            {
+                Console.WriteLine($"I can't evaluate the result {percent}.");
+            }
+            else
+            {
+                int evaluation;
+                string description;
+
+                if (percent >= 83)
+                {
+                    evaluation = 1;
+                    description = "excellent";
+                }
+                else if (percent >= 67)
+                {
+                    evaluation = 2;
+                    description = "commendable";
+
+                }
+                else if (percent >= 50)
+                {
+                    evaluation = 3;
+                    description = "good";
+                }
+                else if (percent >= 33)
+                {
+                    evaluation = 4;
+                    description = "sufficient";
+                }
+                else
+                {
+                    evaluation = 5;
+                    description = "insufficient";
+                }
+                Console.WriteLine($"He is entitled to a mark for {percent}% {evaluation} ({description}). ");
+                Console.ReadKey();
+            }
+        }
+    }
+}
