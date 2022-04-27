@@ -1,0 +1,32 @@
+namespace ConsoleApp74
+{
+    class Program
+    {
+                // Program postupně bude přičítat číslo 10 a vypisovat hodnutu proměnné číslo do max hodnoty 100.
+
+        static void Main(string[] args)
+        {
+            int cislo = 0;
+
+            while (cislo < 101)
+            {
+                Console.WriteLine(cislo);
+                cislo += 10;
+           }
+
+            Console.WriteLine("První část programu je u konce");
+            Console.ReadKey();
+
+            // Program postupně bude odečítat číslo 10 a vypisovat hodnutu proměnné číslo do minimální hodnoty 0.
+            int cislo2 = 100;
+
+            while (cislo2 > -1)
+            {
+                Console.WriteLine(cislo2);
+                cislo2 -= 10;
+            }
+            Console.WriteLine("Program je u konce");
+            Console.ReadKey();
+        }
+        }
+    }
