@@ -1,0 +1,36 @@
+namespace ConsoleApp74_IF
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //načtu číslo
+            Console.Write("Enter number:");
+            string input = Console.ReadLine();
+            double number = double.Parse(input);
+
+            // when the number is greater than 100
+            if (number > 100)
+            {
+                Console.WriteLine("The number is greater than 100.");
+            }
+            else if (number == 42)
+            {
+                Console.WriteLine("The number is equal to 42.");
+            }
+            else if (number > 10) //kulaté závorky nutné
+            {
+                Console.WriteLine("The number is greater than 10 and less than 100.");
+            }
+            else //v opačném případě
+            {
+                Console.WriteLine("The number is less than 10.");
+            }
+            
+            Console.ReadKey();
+
+            /*Змініть програму, щоб визначити, чи є число більше 0, дорівнює 0 чи менше 0.
+             */
+        }
+    }
+}
