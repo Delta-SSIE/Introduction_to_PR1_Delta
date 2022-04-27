@@ -4,7 +4,7 @@ namespace ConsoleApp74_IF
     {
         static void Main(string[] args)
         {
-            //načtu číslo
+            //read number
             Console.Write("Enter number:");
             string input = Console.ReadLine();
             double number = double.Parse(input);
