@@ -2,7 +2,7 @@ namespace ConsoleApp74
 {
     class Program
     {
-        /Програма завантажує% і визначає класифікацію учня
+        //Програма завантажує% і визначає класифікацію учня
 
         static void Main(string[] args)
         {
