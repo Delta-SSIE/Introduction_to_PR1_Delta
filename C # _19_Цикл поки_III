@@ -1,0 +1,75 @@
+amespace ConsoleApp74
+{
+    class Program
+    {
+        // Program vypočetě průměrné čekání na to než se vygeneruje hodnota 6 a určí nejdéle x krát z 10000000 pokusů
+
+        static void Main(string[] args)
+        {
+            //generator RND
+            Random rnd = new Random();
+
+            int opakovani = 10000000;
+            int i = 0;
+
+            int max = 0;
+            int soucet = 0;
+
+            while (i < opakovani)
+            {
+
+                //udělám si počítadlo na hody
+                int hody = 0;
+
+                // proměnná, abych ji mohl použít v podmínce while
+                int cislo;
+
+                do
+                {
+                    //generuju náhodná čísla
+                    cislo = rnd.Next(1, 7);
+
+                    //zvýším počítadlo
+                    hody++;
+                }
+                while (cislo != 6);  //dokud to není 6
+
+
+                soucet += hody;
+
+                if (hody > max)
+                    max = hody;
+
+                i++;
+            }
+
+            double prumer = (double)soucet / opakovani;
+
+            Console.WriteLine($"Průměrně čekám {prumer:0.00} krát, nejdéle {max} krát.");
+            Console.ReadKey();
+        }
+        }
+    }
+    
+    //Napiště program, který bude generovat číslo v inbtevalu <1; 6> dokud nepadne hodnota 6. Progarm vypíše kolik potřeboval pokusů.
+    
+    /*
+    static void Main(string[] args)
+        {
+            //generator RND
+            Random rnd = new Random();
+
+            int pocet = 1;
+            int hodnota = rnd.Next(1, 7); ;
+
+
+            while (hodnota != 6)
+            {
+                hodnota = rnd.Next(1, 7);
+                pocet++;
+            }
+
+            Console.WriteLine($"Hodnota 6 padla po {pocet} hodech.");
+            Console.ReadKey();
+        }
+    */
