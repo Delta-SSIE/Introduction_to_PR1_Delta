@@ -1,0 +1,27 @@
+namespace ConsoleApp74_IF
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //načtu číslo
+            Console.Write("Enter the price of the car (thousands of CZK): ");
+            string input = Console.ReadLine();
+            double price = double.Parse(input);
+            bool jeDrahe;
+
+            if (price > 250)
+                jeDrahe = true;
+            else
+                jeDrahe = false;
+
+            if (jeDrahe)
+                Console.WriteLine("I don't want the car is too expensive");
+            else
+                Console.WriteLine("I want the car for a good price");
+
+            Console.ReadKey();
+
+        }
+    }
+}
