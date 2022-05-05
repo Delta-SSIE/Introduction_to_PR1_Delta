@@ -1,0 +1,12 @@
+//Převod číselných soustav
+Převod číselných soustav
+Úkolem projektu je vytvořit program, který načte hodnotu s desítkové soustavě a převede ji do binární a hexadecimální soustavy. Převedené hodnoty vypíše.
+
+Bonus: Převod z binární soustavy do desítkové
+Bonus 2: Převod z hexadecimální soustavy do desítkové
+Povinné položky:
+1.	Využijte datový typ integer
+2.	Zajistěte, aby při načítání hodnoty od uživatele bylo zadáno číslo nebo povolené znaky pro hexadecimální soustavu
+3.	Možnost opakování programu
+
+Termín odevzdání - zaslání souboru s řešením (*.cs) na email vyuřujícího do 12. 5. 2022
